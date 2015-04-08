@@ -1,0 +1,35 @@
+\documentclass[oldfontcommands,a5paper,openany]{memoir}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Numbers=OldStyle]{Linux Libertine O}
+\usepackage{gregoriotex}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+%\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{170mm}{108mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+
+\tolerance=1000
+\pretolerance=800
+
+
+%\setgrefactor{16}
+
+
+\begin{document}
+\autocompilegabc
+
+\section{Jesu, dulcis memoria}
+
+\gresetfirstannotation{1.}
+\includescore{gabc/hy--jesu_dulcis_memoria--english}
+
+Translation, Catholic hours, or, The family prayer-book.
+
+
+\end{document}
+

@@ -1,0 +1,29 @@
+\documentclass[oldfontcommands,a5paper,openany]{memoir}
+\usepackage{fontspec}
+\usepackage{gregoriotex}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+%\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{145mm}{101mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+
+\tolerance=1000
+\pretolerance=800
+
+
+\begin{document}
+\autocompilegabc
+
+\section{Jesu, dulcis memoria}
+
+\gresetfirstannotation{1.}
+\includescore{gabc/hy--jesu_dulcis_memoria--solesmes}
+
+Attributed to St Bernard of Clairvaux, 
+
+\end{document}
+
