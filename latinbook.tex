@@ -1,5 +1,7 @@
-\documentclass[oldfontcommands,a5paper,openany]{memoir}
+\documentclass[oldfontcommands,a5paper,openany,oneside]{memoir}
 \usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Numbers=OldStyle]{Linux Libertine O}
 \usepackage{gregoriotex}
 \setlength{\trimtop}{0pt}
 \setlength{\trimedge}{0pt}
@@ -14,9 +16,25 @@
 \tolerance=1000
 \pretolerance=800
 
+%Hiding page numbers in table of contents:
+\let\Contentsline\contentsline 
+\renewcommand\contentsline[3]{\Contentsline{#1}{#2}{}}
+\makeatletter
+\renewcommand{\@dotsep}{10000} 
+\makeatother
 
 \begin{document}
 \autocompilegabc
+
+\thispagestyle{empty}
+
+
+\clearpage
+\pagestyle{empty}
+
+\tableofcontents
+
+\newpage
 
 \section{Jesu, dulcis memoria}
 

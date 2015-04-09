@@ -1,0 +1,54 @@
+\documentclass[a5paper]{memoir}
+\usepackage{pdfpages}
+\usepackage{makeidx}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Numbers=OldStyle]{Linux Libertine O}
+\usepackage{gregoriotex}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{0pt}
+%\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{170mm}{108mm}{*} % Was 101mm in a5
+\setulmargins{*}{*}{1.4}
+\setlrmargins{*}{*}{1.2}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{.8\onelineskip}{*}
+\checkandfixthelayout
+
+
+\includepdfset{pagecommand=\thispagestyle{plain}}
+
+\makeindex
+
+\begin{document}
+
+\frontmatter
+
+\thispagestyle{empty}
+
+\begin{centering}
+
+\huge The parallel hymnbook
+
+in Latin and English
+
+\end{centering}
+
+
+\includepdf[pages={1}]{latinbook.pdf}
+
+\mainmatter
+
+\index{Jesu dulcis memoria}
+\includepdf[pages={2}]{latinbook.pdf}
+\index{Jesus the very thought of Thee}
+\includepdf[pages={1}]{englishbook.pdf}
+
+\includepdf[pages={3}]{latinbook.pdf}
+
+\includepdf[pages={2}]{englishbook.pdf}
+
+\printindex
+
+\end{document}
+

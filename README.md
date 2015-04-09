@@ -6,4 +6,4 @@ Although it would be clever to do this all in the one tex file, I think it would
 
 Working from http://gregobase.selapa.net and the GABC Transcription Hymn Tool in Chrome.
 
-
+I'm hoping for a Table of Contents in the front and an alphabetical index in the back.  It might be a bit tricky though, working across several files.
